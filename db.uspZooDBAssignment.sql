@@ -39,7 +39,7 @@ WHERE species_name = 'penguin';
 
 /* Assignment 7 */
 
-CREATE DATABASE db_mediaLibrary;
+CREATE DATABASE db_Marvel_Universe_Phase Four;
 
 CREATE TABLE tbl_movies(
 	movie_id INT PRIMARY KEY NOT NULL IDENTITY (1,1),
@@ -58,23 +58,23 @@ CREATE TABLE tbl_actors (
 INSERT INTO tbl_movies
 	(movie_title, movie_genre)
 	VALUES
-	('Avengers Endgame','Sci-Fi'),
-	('Captain America The First Avenger','Sci-Fi'),
-	('Black Panther','Sci-Fi'),
-	('Doctor Strange','Sci-Fi'),
-	('WandaVision','Sci-Fi'),
-	('What If','Sci-Fi')
+	('Black Widow','Spy and political thriller'),
+	('Shang-Chi and the Legend of the Ten Rings','Martial Arts'),
+	('Eternals','Space Opera'),
+	('Spider-Man: No Way Home','Romantic Comedy'),
+	('Doctor Strange in the Multiverse of Madness','Sci-Fi Horror'),
+	('Thor: Love and Thunder','Action/Adventure')
 ;
 
 INSERT INTO tbl_actors
 	(actor_fname, actor_lname, actor_specialty)
 	VALUES
-	('bob','hope','Sci-Fi'),
-	('betty','white','Sci-Fi'),
-	('charles','xavier','Sci-Fi'),
-	('tom','cruise','Action'),
-	('peter','parker','Sci-Fi'),
-	('stan','marsh','Sci-Fi')
+	('Scarlett','Johansson','hope','Spy and political thriller'),
+	('Simu','Liu','Martial Arts'),
+	('Gemma','Chan','Space Opera'),
+	('Tom','Holland','Romantic Comedy'),
+	('Benedict','Cumberbatch','Sci-Fi Horror'),
+	('Chris','Hemsworth','Action/Adventure')
 ;
 
 SELECT movie_genre
