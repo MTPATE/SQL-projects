@@ -1,3 +1,7 @@
+Create Database db_zooTest2;
+USE db_zooTest2;
+GO
+
 CREATE PROCEDURE createZooDB
 AS
 BEGIN
@@ -186,3 +190,4 @@ BEGIN
 		INNER JOIN tbl_nutrition a3 ON a3.nutrition_id = a1.species_nutrition
 		WHERE species_name = 'ghost bat'
 	;
+END
